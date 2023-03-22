@@ -9,7 +9,8 @@ let getCharacter = async () => {
 const getCharacterId = async (id) => {
     let response = await fetch(`${URLAPI}${id}`)
     let data = await response.json()
-    return data
+    return data;
+
 }
 
 

@@ -7,8 +7,8 @@ const getPrintData = async () => {
     let divId = document.querySelector("#containerCard")
 
     arrayCharacters.forEach(characters => {
-        let { image, name, status, alive, gender, id } = characters
-        divId.appendChild(createCard(image, name, status, alive, gender, id))
+        let { image, name, status, species, gender, id } = characters
+        divId.appendChild(createCard(image, name, status, species, gender, id))
     });
 }
 getPrintData()

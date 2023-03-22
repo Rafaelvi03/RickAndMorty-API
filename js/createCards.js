@@ -38,7 +38,7 @@ const createCard = (img, name, status, alive, gender, id) => {
   genderParagraph.innerText = gender
 
   let btn = document.createElement("a");
-  btn.href = `../detailCard.html?id${id}`
+  btn.href = `./detailCard.html?id=${id}`
   btn.classList.add("btn", "btn-primary");
 
   let contBtn = document.createTextNode("Ir a detalles")

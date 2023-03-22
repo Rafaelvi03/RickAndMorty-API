@@ -12,7 +12,7 @@ const selectUser = async () => {
 const getPrintData = async () => {
     let user = await selectUser()
     let response = document.querySelector("#detailCard")
-    let { image, name, status, alive, gender, } = user
-    response.appendChild(createCardDetail(image, name, status, alive, gender))
+    let { image, name, status, species, gender, } = user
+    response.appendChild(createCardDetail(image, name, status, species, gender))
 }
-getPrintData()
+getPrintData()  
